@@ -22,10 +22,35 @@
 		<script src="assets/js/html5shiv.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body class="bg-light">
 
 <header>
-	<h1>W3-UZ</h1>
+	 <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm">
+      <a class="navbar-brand" href="https://w3-uz.github.io/">W3-UZ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Main navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://w3-uz.github.io/">Bosh sahifa</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="ddhtml" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HTML</a>
+            <div class="dropdown-menu" aria-labelledby="ddhtml">
+              <a class="dropdown-item" href="#">Kirish</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="ddcss" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CSS</a>
+            <div class="dropdown-menu" aria-labelledby="ddcss">
+              <a class="dropdown-item" href="#">Krish</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
 </header>
 
 <main>
@@ -40,6 +65,8 @@
 	Sahifa: <a href="https://github.com/w3-uz/w3-uz.github.io/">Open Source/Github</a>
 </footer>
 
+<script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+<script src="assets/js/popper.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+body {
+  padding-bottom: 20px;
+}
+
 header, section, footer, aside, nav, main, article, figure {
   display: block
+}
+
+.navbar {
+  margin-bottom: 20px;
 }
