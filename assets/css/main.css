@@ -83,3 +83,9 @@
 .radius {
 	border-radius: 10px
 }
+
+.salom-html {
+  background: url("../img/html.png") top left no-repeat;
+  background-size: cover;
+  color: #fff
+}
