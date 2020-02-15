@@ -4,7 +4,8 @@
    --link-dr-color: #000;
    --font-color: #000;
    --bg-color: #fff;
-   --jumbotron-bg: #e9ecef
+   --jumbotron-bg: #e9ecef;
+   --selection-bg-color: #66bb6a
 }
  [data-theme="dark"] {
    --link-dr-color: #fff;
@@ -88,4 +89,10 @@
   background: url("../img/right.png") top left no-repeat;
   background-size: cover;
   color: #fff
+}
+
+::selection {
+  background: var(--selection-bg-color);
+} ::-moz-selection {
+  background: var(--selection-bg-color);
 }
