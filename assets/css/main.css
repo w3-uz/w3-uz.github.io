@@ -4,14 +4,12 @@
    --link-dr-color: #000;
    --font-color: #000;
    --bg-color: #fff;
-   --jumbotron-bg: #e9ecef;
-   --selection-bg-color: #66bb6a
+   --selection-bg-color: #66bb6a;
 }
  [data-theme="dark"] {
    --link-dr-color: #fff;
    --font-color: #fff;
    --bg-color: #000;
-   --jumbotron-bg: #000
 }
  body {
    background-color: var(--bg-color);
@@ -20,7 +18,7 @@
 }
  a {
    color: var(--link-dr-color);
-   text-decoration: none;
+   text-decoration: none
 }
  nav {
    display: flex;
@@ -29,7 +27,7 @@
 }
  .theme-switch-wrapper {
    display: flex;
-   align-items: center;
+   align-items: center
 }
  .theme-switch-wrapper em {
    margin-left: 10px;
@@ -39,7 +37,7 @@
    display: inline-block;
    height: 34px;
    position: relative;
-   width: 60px;
+   width: 60px
 }
  .theme-switch input {
    display: none
@@ -92,7 +90,7 @@
 }
 
 ::selection {
-  background: var(--selection-bg-color);
+  background: var(--selection-bg-color)
 } ::-moz-selection {
-  background: var(--selection-bg-color);
+  background: var(--selection-bg-color)
 }
