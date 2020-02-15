@@ -20,3 +20,9 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+// Telegram Live chat | admin
+window.replainSettings = { id: '305a47b8-6dd8-4fbf-8fca-87d6448d7864' };
+(function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
