@@ -5,44 +5,39 @@
    --font-color: #000;
    --bg-color: #fff;
    --selection-bg-color: #66bb6a;
-}
- [data-theme="dark"] {
+} [data-theme="dark"] {
    --link-dr-color: #fff;
    --font-color: #fff;
    --bg-color: #000;
 }
- body {
+
+body {
    background-color: var(--bg-color);
    color: var(--font-color);
    padding-bottom: 20px
 }
- a {
+
+a {
    color: var(--link-dr-color);
    text-decoration: none
 }
- nav {
-   display: flex;
-   justify-content: flex-end;
-   padding: 20px 0
+
+.navbar {
+  margin-bottom: 20px
 }
- .theme-switch-wrapper {
+
+.theme-switch-wrapper {
    display: flex;
    align-items: center
-}
- .theme-switch-wrapper em {
-   margin-left: 10px;
-   font-size: 1rem
-}
- .theme-switch {
+} .theme-switch {
    display: inline-block;
-   height: 34px;
    position: relative;
-   width: 60px
-}
- .theme-switch input {
+   margin: 5px 11px;
+   width: 60px;
+   height: 34px
+} .theme-switch input {
    display: none
-}
- .slider {
+} .slider {
    background-color: #ccc;
    bottom: 0;
    cursor: pointer;
@@ -51,9 +46,8 @@
    right: 0;
    top: 0;
    transition: 0.4s
-}
- .slider:before {
-   background-color: #fff;
+} .slider:before {
+   background-color: var(--bg-color);
    bottom: 4px;
    content: "";
    height: 26px;
@@ -61,22 +55,14 @@
    position: absolute;
    transition: 0.4s;
    width: 26px
-}
- input:checked + .slider {
+} input:checked + .slider {
    background-color: #66bb6a
-}
- input:checked + .slider:before {
+} input:checked + .slider:before {
    transform: translateX(26px)
-}
- .slider.round {
+} .slider.round {
    border-radius: 34px
-}
- .slider.round:before {
+} .slider.round:before {
    border-radius: 50%
-}
-
-.navbar {
-  margin-bottom: 20px
 }
 
 .radius {
@@ -84,9 +70,10 @@
 }
 
 .salom-html {
-  background: url("../img/right.png") top left no-repeat;
+  background: url("../img/html.png") top left no-repeat;
   background-size: cover;
-  color: #fff
+  color: #fff;
+  /* height: 70vh */
 }
 
 ::selection {
