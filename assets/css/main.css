@@ -3,12 +3,14 @@
 :root {
    --link-dr-color: #000;
    --font-color: #000;
-   --bg-color: #fff;
+   --bg-color: #f8f9fa;
    --selection-bg-color: #66bb6a;
+   --article-oq-fon: #fff;
 } [data-theme="dark"] {
    --link-dr-color: #fff;
    --font-color: #fff;
    --bg-color: #000;
+   --article-oq-fon: #000;
 }
 
 body {
@@ -20,6 +22,8 @@ body {
 a {
    color: var(--link-dr-color);
    text-decoration: none
+} a:hover {
+  color: #66bb6a
 }
 
 .navbar {
@@ -73,11 +77,51 @@ a {
   background: url("../img/html.png") top left no-repeat;
   background-size: cover;
   color: #fff;
-  /* height: 70vh */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #000;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+} .card:hover .overlay {
+opacity: 1
+}
+
+.oq-fon, .content {
+   background-color: var(--article-oq-fon);
+   color: var(--font-color);
+   padding: 5px 10px
 }
 
 ::selection {
-  background: var(--selection-bg-color)
+  background-color: var(--selection-bg-color)
 } ::-moz-selection {
-  background: var(--selection-bg-color)
+  background-color: var(--selection-bg-color)
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+} ::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+} ::-webkit-scrollbar-corner {
+  background: transparent;
+} ::-webkit-scrollbar-thumb {
+  background-color: var(--selection-bg-color);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+} ::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+  border: 0px dashed #ffffff;
+  border-radius: 22px;
 }
