@@ -1,0 +1,20 @@
+pre > code, pre.highlight, pre.idl {
+    display: block;
+    padding: 0.5em 1em;
+    overflow: auto;
+    border-radius: 0.3em;
+}
+
+pre > code.idl::before, pre.idl::before, pre > code.css::before, pre.highlight.lang-css::before {
+    padding: 0.5em;
+    position: absolute;
+    top: auto;
+    margin: -23px 0 0 -10px;
+    width: 1.5em;
+    color: #606060
+}
+
+pre > code.css::before, pre.highlight.lang-css::before {
+    content: 'CSS:';
+}
+
